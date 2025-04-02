@@ -1,0 +1,164 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Stellen Sie sicher, dass der Inhalt oben bleibt */
+    
+    font-family: Arial, sans-serif; /* Optional: bessere Schrift */
+    background-color: #ffffff6c; /* Optional: ein heller Hintergrund */
+    margin-bottom: 10px;
+}
+
+
+.container {
+    
+    max-width: 680px; /* Maximale Breite */
+    height: 750px; /* Höhe des Containers */
+    padding: 80px; /* Abstand innen */
+    background-color: #daf394b9; /* Weiße Hintergrund */
+    border-radius: 18px; /* Optional: runde Ecken */
+    box-shadow: 0 1px 26px rgba(0, 0, 0, 2.29); /* Optional: Schatten */
+    text-align: center; /* Optional: Zentrierter Text */
+    
+    box-sizing: border-box; /* Wichtig für Padding */
+    margin-top: 10px; /* Optional: Abstand oben */
+    margin-bottom: 130px; /* Optional: Abstand unten */
+}
+
+.wochentage-container {
+    margin-top: -60px; /* Setzen Sie dies so, dass der Abstand verringert wird */
+    padding-top: -20px; /* Optional: Passen Sie das Padding auch an */
+}
+
+.wochentage-container h1 {
+    margin-top: 0; /* Entfernt den oberen Rand des H1 */
+}
+
+
+.wochentage {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px; /* Optional: Maximale Breite des Containers */
+    margin: 0 auto; /* Zentriert den Container */
+}
+
+.wochentage button {
+    flex: 1; /* Alle Buttons erhalten gleiche Breite */
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 50px;/*hier wird der Abstand zwischen den Buttons vergrößert*/
+    border: 1px solid #ccc;
+    background-color: #1b05e0;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.wochentage button.selected {
+    background-color: #00ff15;
+    color: white;
+}
+
+.wochentage button:hover {
+    background-color: #00ff15;
+    color: white;
+    transform: translateY(-3px); /* Anheben um 5px */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8); /* Größerer Schatten beim Hover */
+}
+
+.stunde {
+    margin-bottom: 10px;
+    display: flex; /* Flexbox verwenden für Layout */
+    align-items: center; /* Zentriere die Elemente vertikal */
+}
+
+.stunde label {
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+.text-input {
+    width: 300px; /* Kürzere Breite */
+    padding: 15px;
+    font-size: 15px;
+    
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.text-input:focus {
+    outline: none;
+    border-color: #66afe9;
+}
+
+.upload-container {
+    width: 10%;
+}
+
+.upload-container input[type="file"] {
+    display: none; /* Verstecke das Standard-Datei-Input */
+}
+
+.upload-container label {
+    display: flex;
+    justify-content: center; /* Horizontale Zentrierung */
+    align-items: center;    /* Vertikale Zentrierung */
+    padding: 12px 50px;
+    background-color: #1b05e0;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 120%;
+    transition: background-color 0.1s ease;
+    margin-left: 1px;
+    margin-top: 40px;
+}
+
+.upload-container label:hover {
+    background-color: #30f309;
+    transform: translateY(-3px); /* Anheben um 5px */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8); /* Größerer Schatten beim Hover */
+}
+
+.checkmark {
+    color: green;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.btn {
+    padding: 12px 50px;
+    background-color: #1b05e0;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.1s ease;   
+}
+
+.btn:hover {
+    background-color: #04f310;
+    transform: translateY(-3px); /* Anheben um 5px */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8); /* Größerer Schatten beim Hover */
+}
+
+
+
+.button-container {
+    text-align: center;
+    padding: 0px 0px;
+    margin-bottom: 80%;  /* Originaler Wert für den Abstand unten */
+    margin-top: -43px;  /* Füge diese Zeile hinzu, um den Button nach oben zu verschieben */
+    margin-left: 300px; /* Anpassen des horizontalen Abstands */
+}
+
+.btn.submitted {
+    background-color: #4CAF50; /* Grün */
+    cursor: not-allowed; /* Deaktiviert den Button nach dem Klicken */
+}
+
