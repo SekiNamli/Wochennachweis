@@ -1,0 +1,39 @@
+===========================================
+📁 Projekt:Wochennachweis
+===========================================
+
+🔧 BENÖTIGTE DATEIEN UND ORDNER:
+-------------------------------------------
+✔️ Ordner:
+- composer/         → Composer-Loader
+- dompdf/           → PDF-Generator-Bibliothek
+- masterminds/      → Unterstützt HTML/XML-Strukturen
+- mpdf/             → Alternative PDF-Bibliothek
+- phpoffice/        → Für Word-Vorlagenbearbeitung (PHPWord)
+- sabberworm/       → CSS-Parser (für mpdf/dompdf)
+- setasign/         → PDF-Handling (z. B. FPDI)
+- tecnickcom/       → TCPDF-Bibliothek
+
+✔️ Dateien:
+- autoload.php      → Wird von `composer` erzeugt; lädt alle Klassen
+- composer.json     → Paketdefinitionen
+- composer.lock     → Genaue Paketversionen
+- index.php         → Hauptanwendung (Word-Dokument befüllen)
+- styles.css        → Layout für `index.php`
+- sound.mp3         → Optionales Audioelement (z. B. Soundeffekt bei Aktionen)
+
+
+🚀 VERWENDUNG DER ANWENDUNG:
+-------------------------------------------
+1. Öffne Xampp und starte Apache.Öffne die Anwendung im Browser:
+   👉 http://localhost/123
+
+2. Lade deine `.docx`-Vorlage hoch
+
+3. Wähle einen Wochentag und gib Inhalte für die Stunden ein
+
+4. Klicke auf „Übertragen“ – das Word-Dokument wird automatisch erstellt und als Download im Format `KWXX.docx` angeboten.
+
+
+
+© 2025 by Seki Namli
